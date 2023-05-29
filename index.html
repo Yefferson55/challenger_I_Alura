@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto - Challenger I</title>
+</head>
+<body>
+        <div class="logo">  
+            <img src="IMG/Logo.png" alt="logo-alura">
+        </div>
+            <div class="busqueda">
+                <textarea name="txt-busqueda" id="txt-busqueda" cols="30" rows="10" placeholder="Ingrese el texto aqui" class="txt-busqueda"></textarea>
+                <p class="msj-alerta"><img src="IMG/alerta.svg" alt="Aqui va el icono de alerta">Solo letras minúsculas y sin acentos</p>
+                <input class="btn-encriptar" type="button" value="Encriptar" onclick="encriptar()">
+                <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">
+            </div>
+            <div class="respuesta">
+                    <img src="IMG/Chucho.png" alt="" class="imagen">
+                    <h2 class="msj-busqueda" >Ningún mensaje fue<br> encontrado</h2>
+                    <textarea class="txt-respuesta" name="txt-respuesta" id="txt-respuesta" cols="30" rows="10" placeholder="Ingrese el texto que desees encriptar o desencriptar"></textarea>
+                    <input class="btn-copiar" type="button" value="Copiar" onclick="copiar()">
+            </div>
+        </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
