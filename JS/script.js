@@ -8,6 +8,12 @@ function capturarTextArea(){
     var area = document.querySelector(".txt-busqueda");
     return area.value;
 }
+function cambiarTxtArea(){
+    document.getElementById("txt-respuesta").style.paddingTop = "100px";
+    document.getElementById("txt-respuesta").style.fontSize = "28px";
+    document.getElementById("txt-respuesta").style.color = "black";
+
+}
 //permite copiar al portapapeles el texto del resultado de los botones encriptar o desencriptar
 function copiar(){
     txtRespuesta.select();
@@ -22,11 +28,13 @@ function ocultarCampos(){
 // esta funcion llama a ocultarCampos y luego muestra la infomacion encriptada en el lado derecho de la pantalla
 function encriptar(){
     ocultarCampos();
+    cambiarTxtArea();
     txtRespuesta.textContent = encriptarText(capturarTextArea());
 }
 // esta funcion llama a ocultarCampos y luego muestra la infomacion desencriptada en el lado derecho de la pantalla
 function desencriptar(){
     ocultarCampos();
+    cambiarTxtArea();
     txtRespuesta.textContent = desencriptarText(capturarTextArea());
 }
 
